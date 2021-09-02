@@ -7,6 +7,12 @@ You can use my code haha, I got most of it from tutorials, and stack overflow an
 DISCORD LINK:
 https://discord.gg/fSUCqD9dTZ
 
+REDDIT: 
+u/Orion_games
+
+itch.io:
+https://ori0ngames.itch.io/
+
 ####   CHANGE LOG   ######
 
 1.0 - 1.5:
