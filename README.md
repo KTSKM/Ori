@@ -10,7 +10,7 @@ https://discord.gg/fSUCqD9dTZ
 REDDIT: 
 u/Orion_games
 
-itch.io:
+ITCH.IO:
 https://ori0ngames.itch.io/
 
 ####   CHANGE LOG   ######
