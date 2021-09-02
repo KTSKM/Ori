@@ -17,5 +17,6 @@ https://ori0ngames.itch.io/
 
 1.0 - 1.5:
   no notable changes
+  
 2.0:
   added more categories, and commands.
