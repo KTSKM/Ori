@@ -1,6 +1,5 @@
 import discord 
 from discord.ext import commands
-import praw
 import PIL
 from PIL import Image
 from io import BytesIO
