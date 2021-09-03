@@ -22,4 +22,4 @@ https://ori0ngames.itch.io/
   added more categories, and commands.
   
 2.5:
-  fixed throwfire command 
+  debugging is pain
