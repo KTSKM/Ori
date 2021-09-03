@@ -22,4 +22,4 @@ https://ori0ngames.itch.io/
   added more categories, and commands.
   
 2.5:
-  debugging is pain
+  ~~debugging is pain~~ i just removed it.
