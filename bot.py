@@ -41,7 +41,7 @@ async def on_command_error(ctx,error):
         await ctx.reply("Thats not a command dumdum")
     elif isinstance(error, commands.errors.CommandOnCooldown):
         await ctx.reply("I know you wanna go on a date with me that much, but please let me rest a little!")
-        await ctx.reply("<:oripout:883289938370646077>
+        await ctx.reply("<:oripout:883289938370646077>")
     else:
         await ctx.reply("something went wrong. \n Please wait until kermoa is active, and send the screenshot of the bug")
         raise error
