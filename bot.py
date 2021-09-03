@@ -10,7 +10,7 @@ bot = commands.Bot(command_prefix='ori!')
 
 @bot.event
 async def on_ready():
-    print("bot is ready")
+    print("bot is ready v2.5")
  
 @bot.event
 async def on_message(msg):
