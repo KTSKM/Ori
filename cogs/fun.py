@@ -61,7 +61,7 @@ class fun(commands.Cog, name='fun'):
         await asyncio.sleep(0.5)
         line = random.randrange(1,4)
         if line == 1:
-            await ctx.send("私はあなたを愛しています、あなたは知っています！")
+            await ctx.send("Wow... The cherry blossoms are pretty... Eh? R-romance...? Uh...")
         elif line == 2:
             await ctx.send("I tried untying my hair today, what do you think?")
         else:
