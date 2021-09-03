@@ -39,7 +39,7 @@ async def on_command_error(ctx,error):
         await ctx.message.delete()
     elif isinstance(error, commands.errors.CommandNotFound):
         await ctx.reply("Thats not a command dumdum")
-    elif insintance(error, commands.errorsCommandOnCooldown):
+    elif isinstance(error, commands.errorsCommandOnCooldown):
         await ctx.reply("I know you wanna go on a date with me that much, but please let me rest a little!")
     else:
         await ctx.reply("something went wrong. \n Please wait until kermoa is active, and send the screenshot of the bug")
