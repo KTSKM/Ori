@@ -20,3 +20,6 @@ https://ori0ngames.itch.io/
   
 2.0:
   added more categories, and commands.
+  
+2.5:
+  fixed throwfire command 
