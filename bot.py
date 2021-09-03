@@ -1,13 +1,15 @@
 import discord
 from discord.ext import commands
-
+from itertools import cycle
 
 filtered_words = ["nigger", "whore", "tranny", "terrorist", "chink", "faggot", "nword", "nigga", "ching", "chong", "chingchong", "nig", "niger", "slut", "retarded", "retard", "nigtard", "fagtard", "sissy"]
 
 bot = commands.Bot(command_prefix='ori!')
 
-### EVENTS #############    
+status = cycle(
+    ['Try ori!help','Prefix - ori!'])
 
+### EVENTS #############    
 @bot.event
 async def on_ready():
     print("bot is ready v2.5")
