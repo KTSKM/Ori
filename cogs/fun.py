@@ -59,14 +59,15 @@ class fun(commands.Cog, name='fun'):
     async def datevent(self, ctx):
         await ctx.send(file = discord.File('DATEEVENT.jpg'))
         await asyncio.sleep(0.5)
-        line = await random.randrange(1,3)
+        line = random.randrange(1,3)
         if line == 1:
-            await ctx.send("Looks like we’re the first ones! Erm... And we’re alone too... What would you like to do...?")
+            await ctx.send("私はあなたを愛しています、あなたは知っています！")
         elif line == 2:
             await ctx.send("I tried untying my hair today, what do you think?")
         else:
-            await ctx.send("私はあなたを愛しています、あなたは知っています！")
+            await ctx.send("Looks like we’re the first ones! Erm... And we’re alone too... What would you like to do...?")
 
+            
         
 def setup(bot):
     bot.add_cog(fun(bot))
