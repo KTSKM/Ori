@@ -59,7 +59,7 @@ class fun(commands.Cog, name='fun'):
     async def datevent(self, ctx):
         await ctx.send(file = discord.File('DATEEVENT.jpg'))
         await asyncio.sleep(0.5)
-        line = random.randrange(1,3)
+        line = random.randrange(1,4)
         if line == 1:
             await ctx.send("私はあなたを愛しています、あなたは知っています！")
         elif line == 2:
