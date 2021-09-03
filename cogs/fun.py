@@ -60,9 +60,9 @@ class fun(commands.Cog, name='fun'):
         await ctx.send(file = discord.File('DATEEVENT.jpg'))
         await asyncio.sleep(0.5)
         line = random.randrange(1,3)
-        if line == 1:
+        if line = 1:
             await ctx.send("私はあなたを愛しています、あなたは知っています！")
-        elif line == 2:
+        elif line = 2:
             await ctx.send("I tried untying my hair today, what do you think?")
         else:
             await ctx.send("Looks like we’re the first ones! Erm... And we’re alone too... What would you like to do...?")
