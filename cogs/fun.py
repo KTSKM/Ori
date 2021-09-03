@@ -55,7 +55,7 @@ class fun(commands.Cog, name='fun'):
         await ctx.send(file = discord.File("profile.jpg"))
 
     @commands.command(aliases=['event','date'], description='Go on a date with me! \ncool down is 2 minutes')
-    @commands.cooldown(1, 120, commands.BucketType.guild)# the 120 is just 2 minutes, like you said.
+    @commands.cooldown(1, 20, commands.BucketType.guild)
     async def datevent(self, ctx):
         await ctx.send(file = discord.File('DATEEVENT.jpg'))
         await asyncio.sleep(0.5)
