@@ -42,7 +42,7 @@ async def on_command_error(ctx,error):
         raise error
 
 ## if ur gonna add a category, make the python file in cogs, and add it here
-initial_extensions = ['cogs.moderation', 'cogs.ORiON','cogs.Extra', 'cogs.fun', 'cogs.meme'] 
+initial_extensions = ['cogs.moderation', 'cogs.ORiON','cogs.Extra', 'cogs.fun'] 
 
 if __name__ == '__main__':
     for extension in initial_extensions:
