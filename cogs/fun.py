@@ -1,7 +1,7 @@
 import asyncio
 import random
-import discord 
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 import PIL
 from PIL import Image
 from io import BytesIO
@@ -31,7 +31,7 @@ class fun(commands.Cog, name='fun'):
             await channel.send("Correct Sytax: [Choice] or [Choice2]")
             return
         
-        embed = discord.Embed(title="Poll", description = txt,color = discord.Colour.red())
+        embed = nextcord.Embed(title="Poll", description = txt,color = discord.Colour.red())
         message_ = await channel.send(embed=embed)
         await message_.add_reaction("✅")
         await message_.add_reaction("❌")
