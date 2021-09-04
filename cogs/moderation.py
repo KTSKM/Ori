@@ -78,7 +78,7 @@ class moderation(commands.Cog, name='moderation'):
         created_at = member.created_at.strftime("%b %d, %Y")
         roles = [role for role in member.roles]
 
-        embed = discord.Embed(title = member.name, description= member.mention, Color= discord.Color.green )
+        embed = nextcord.Embed(title = member.name, description= member.mention, Color= discord.Color.green )
         embed.add_field(name = "ID", value = member.id, inline= True)
         embed.add_field(name = 'account created at', value= created_at)
         embed.add_field(name="Roles:", value="".join([role.mention for role in roles]))
@@ -99,7 +99,7 @@ class moderation(commands.Cog, name='moderation'):
 
         icon = str(ctx.guild.icon_url)
    
-        embed = discord.Embed(
+        embed = nextcord.Embed(
               title=name + " Server Information",
               description=description,
               color=discord.Color.blue()
