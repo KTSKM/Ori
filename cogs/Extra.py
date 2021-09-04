@@ -1,6 +1,6 @@
-import discord
 import random
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 
 class Extra(commands.Cog, name='Extra'):
     def __init__(self, bot):
