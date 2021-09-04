@@ -1,4 +1,4 @@
-import nextcord as discord
+import discord
 from discord.colour import Color
 from discord.ext import commands
 from discord.ext.commands.core import command, has_permissions
