@@ -1,5 +1,5 @@
-import discord
-from discord.ext import commands
+import nextcord
+from nextcord.ext import commands
 from itertools import cycle
 
 filtered_words = ["nigger", "whore", "tranny", "terrorist", "chink", "faggot", "nword", "nigga", "ching", "chong", "chingchong", "nig", "niger", "slut", "retarded", "retard", "nigtard", "fagtard", "sissy"]
@@ -12,7 +12,7 @@ status = cycle(
 ### EVENTS #############    
 @bot.event
 async def on_ready():
-    print("bot is ready v3.0")
+    print("bot is ready Ori v3.5 (nextcord)")
  
 @bot.event
 async def on_message(msg):
