@@ -1,6 +1,7 @@
 import nextcord
 from nextcord.ext import commands
 from itertools import cycle
+import bot_token
 
 filtered_words = ["nigger", "whore", "tranny", "terrorist", "chink", "faggot", "nword", "nigga", "ching", "chong", "chingchong", "nig", "niger", "slut", "retarded", "retard", "nigtard", "fagtard", "sissy"]
 
@@ -54,4 +55,4 @@ if __name__ == '__main__':
     for extension in initial_extensions:
         bot.load_extension(extension)
 
-bot.run('ODgyNDU1MTE1MjQ2NzM5NDc2.YS7oXg.v_5aza8iHbkJNEc_DrN_8S_BHhA', bot=True, reconnect=True)
+bot.run(bot_token.TOKEN)
