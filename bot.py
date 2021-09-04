@@ -4,6 +4,7 @@ from itertools import cycle
 
 filtered_words = ["nigger", "whore", "tranny", "terrorist", "chink", "faggot", "nword", "nigga", "ching", "chong", "chingchong", "nig", "niger", "slut", "retarded", "retard", "nigtard", "fagtard", "sissy"]
 
+intents = nextcord.Intents.all()
 bot = commands.Bot(command_prefix='ori!')
 
 status = cycle(
