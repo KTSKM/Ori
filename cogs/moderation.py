@@ -1,7 +1,8 @@
-import discord
-from discord.colour import Color
-from discord.ext import commands
-from discord.ext.commands.core import command, has_permissions
+import nextcord
+from nextcord.ext import commands
+from nextcord.colour import Color
+from nextcord.ext import commands
+from nextcord.ext.commands.core import command, has_permissions
 
 class moderation(commands.Cog, name='moderation'):
     def __init__(self, bot):
