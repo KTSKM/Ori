@@ -1,7 +1,6 @@
 import nextcord
 from nextcord.ext import commands
 from itertools import cycle
-import bot_token
 
 filtered_words = ["nigger", "whore", "tranny", "terrorist", "chink", "faggot", "nword", "nigga", "ching", "chong", "chingchong", "nig", "niger", "slut", "retarded", "retard", "nigtard", "fagtard", "sissy"]
 
