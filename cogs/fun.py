@@ -10,7 +10,7 @@ class fun(commands.Cog, name='fun'):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=['gj'], description="compliment me ples")
+    @commands.command(aliases=['gj','gb','goodjob'], description="compliment me ples")
     async def goodjob(self,ctx):
         await ctx.send("<:smug_ori:881561648907833354>")
         await ctx.send('thank you')
