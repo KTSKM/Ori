@@ -38,7 +38,7 @@ class fun(commands.Cog, name='fun'):
         await ctx.message.delete()
 
     @commands.command(aliases=['mw', 'wanted'], description='creates a wanted poster of yourself')
-    async def mostwanted(self, ctx, user : discord.Member=None):
+    async def mostwanted(self, ctx, user : nextcord.Member=None):
         if user == None:
             user = ctx.author
         
@@ -57,7 +57,7 @@ class fun(commands.Cog, name='fun'):
     @commands.command(aliases=['event','date'], description='Go on a date with me! \ncool down is 2 minutes')
     @commands.cooldown(1, 20, commands.BucketType.guild)
     async def datevent(self, ctx):
-        await ctx.send(file = discord.File('DATEEVENT.jpg'))
+        await ctx.send(file = nextcord.File('DATEEVENT.jpg'))
         await asyncio.sleep(0.5)
         line = random.randrange(1,4)
         if line == 1:
