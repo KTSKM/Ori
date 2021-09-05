@@ -1,7 +1,7 @@
-import nextcord as discord
-from discord.colour import Color
-from discord.ext import commands
-from discord.ext.commands.core import command, has_permissions
+import nextcord
+from nextcord.colour import Color
+from nextcord.ext import commands
+from nextcord.ext.commands.core import command, has_permissions
 
 class moderation(commands.Cog, name='moderation'):
     def __init__(self, bot):
@@ -16,7 +16,7 @@ class moderation(commands.Cog, name='moderation'):
     ## KICK
     @commands.command(aliases=['k'], description= 'kicks specified member. only people with "kick_members" perm can use this. ')
     @commands.has_guild_permissions(kick_members=True)
-    async def kick(self,ctx, member : discord.Member,*,reason= "No reason provided"):
+    async def kick(self,ctx, member : nextcord.Member,*,reason= "No reason provided"):
         try:
             await member.send("You've been kicked from ORiON, my guess: you were naughty. Oh! Here's the real reason: "+reason)
         except:
@@ -27,7 +27,7 @@ class moderation(commands.Cog, name='moderation'):
     ## BAN
     @commands.command(aliases=['b'], description= 'bans specified member. only people with "ban_members" perm can use this. ')
     @commands.has_guild_permissions(ban_members=True)
-    async def ban(self,ctx, member : discord.Member,*,reason= "No reason provided"):
+    async def ban(self,ctx, member : nextcord.Member,*,reason= "No reason provided"):
 
         await member.send("You've been banned from ORiON, my guess: you were *real* naughty. Oh! Here's the real reason: "+reason)
         await member.ban(reason=reason)
@@ -53,7 +53,7 @@ class moderation(commands.Cog, name='moderation'):
     ## MUTE
     @commands.command(aliases=['m'], description= 'mutes specified member. only people with "kick_members" perm can use this. ')
     @commands.has_guild_permissions(kick_members=True)
-    async def mute(self,ctx, member : discord.Member,*,reason="No reason provided"):
+    async def mute(self,ctx, member : nextcord.Member,*,reason="No reason provided"):
         muted_role = ctx.guild.get_role(880016735980363785)
 
         await member.add_roles(muted_role)
@@ -63,7 +63,7 @@ class moderation(commands.Cog, name='moderation'):
     ## UNMUTE
     @commands.command(aliases=['um'], description= 'unmutes specified member. only people with "kick_members" perm can use this. ')
     @commands.has_guild_permissions(kick_members=True)
-    async def unmute(self,ctx,member : discord.Member,*,reason= "No reason provided"):
+    async def unmute(self,ctx,member : nextcord.Member,*,reason= "No reason provided"):
         muted_role = ctx.guild.get_role(880016735980363785)
 
         await member.remove_roles(muted_role)
@@ -73,11 +73,11 @@ class moderation(commands.Cog, name='moderation'):
     ## WHOIS
     @commands.command(aliases=['info', 'user', 'userinfo'], description= 'tells you the information of the user mentioned.')
     @commands.has_guild_permissions(kick_members=True)
-    async def whois(self, ctx, member : discord.Member):
+    async def whois(self, ctx, member : nextcord.Member):
         created_at = member.created_at.strftime("%b %d, %Y")
         roles = [role for role in member.roles]
 
-        embed = discord.Embed(title = member.name, description= member.mention, Color= discord.Color.green )
+        embed = nextcord.Embed(title = member.name, description= member.mention, Color= discord.Color.green )
         embed.add_field(name = "ID", value = member.id, inline= True)
         embed.add_field(name = 'account created at', value= created_at)
         embed.add_field(name="Roles:", value="".join([role.mention for role in roles]))
@@ -156,7 +156,7 @@ def setup(bot):
         embed = nextcord.Embed(
               title=name + " Server Information",
               description=description,
-              color=discord.Color.blue()
+              color=nextcord.Color.blue()
             )
         embed.set_thumbnail(url=icon)
         embed.add_field(name="Owner", value=owner, inline=True)
